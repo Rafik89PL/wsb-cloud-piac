@@ -1,0 +1,27 @@
+{% extends "/base/base.html" %}
+{% set active_page = "gallery" %}
+{% block title %} Gallery {% endblock %}
+{% block body %}
+    <h1 align="center">Przykładowa galeria:</h1>
+  <div class="row gx-2 gy-2 justify-content-md-center">
+    <div class="col column p-2"><img src="{{ url_for('static', filename='graphics/Lena.jpg') }}" class="rounded float-start img-gallery myImages mx-auto d-block" id="myImg" alt="ZZZ"></div>
+    <div class="col column p-2"><img src="{{ url_for('static', filename='graphics/Lena.jpg') }}" class="rounded float-start img-gallery myImages mx-auto d-block" id="myImg" alt="ZZZ"></div>
+      <div class="col column p-2"><img src="{{ url_for('static', filename='graphics/Lena.jpg') }}" class="rounded float-start img-gallery myImages mx-auto d-block" id="myImg" alt="Zzz"></div>
+      </div>
+<div class="row gx-2 gy-2 justify-content-md-center">
+      <div class="col column p-2" > <img src="{{ url_for('static', filename='graphics/Lena.jpg') }}" class="rounded float-start img-gallery myImages" id="myImg" alt="XXx"></div>
+      <div class="col column p-2" > <img src="{{ url_for('static', filename='graphics/Lena.jpg') }}" class="rounded float-start img-gallery myImages" id="myImg" alt="XXX"></div>
+      <div class="col column p-2"> <img src="{{ url_for('static', filename='graphics/Lena.jpg') }}" class="rounded float-start img-gallery myImages" id="myImg" alt="XXX"></div>
+    </div>
+<div class="row gx-2 gy-2 justify-content-md-center">
+    <div class="col column p-2" ><img src="{{ url_for('static', filename='graphics/wir.jpg') }}" class="rounded float-start img-gallery myImages" id="myImg" alt="YYY"></div>
+    <div class="col column p-2"><img src="{{ url_for('static', filename='graphics/wir.jpg') }}" class="rounded float-start img-gallery myImages" id="myImg" alt="YYY"></div>
+      <div class="col column p-2"><img src="{{ url_for('static', filename='graphics/wir.jpg') }}" class="rounded float-start img-gallery myImages" id="myImg" alt="YYYy"></div>
+</div>
+
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+{% endblock %}
