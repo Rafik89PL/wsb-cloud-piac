@@ -59,4 +59,4 @@ jobs:
         with:
           app-name: 'rafalklimczak-wsb'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_bd77621bed0b44a09eabf94c0903bb9a }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_5dff722e9cdc44dd9d46a215036aa495 }}
