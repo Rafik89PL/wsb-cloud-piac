@@ -33,7 +33,7 @@ def gallery():
 def guestbook():
     with AzureDB() as a:
         data = a.azureGetAllData();
-        return render_template("guestbook.html", data=data)
+        return render_template("result.html", data=data)
 
 
 @app.route('/deleteentry', methods=['POST'])
